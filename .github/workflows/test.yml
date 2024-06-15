@@ -1,0 +1,20 @@
+name: Test CMD behavior
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-cmd:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Check LF.bat
+      run: .\Check-LF-Line-Endings.ps1
+      shell: pwsh
+
+ 
