@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  test-cmd:
+  test-checkout:
     runs-on: windows-latest
 
     steps:
